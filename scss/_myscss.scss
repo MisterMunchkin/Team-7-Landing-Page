@@ -25,7 +25,6 @@
   transition: all .4s ease-in-out;
   .content {
     margin-top: 50px;
-    margin-left: 20px;
   }
 }
 .contact-us-page.active {
@@ -39,9 +38,6 @@
   position: fixed;
   opacity: 100;
 }
-// .close:hover { 
-//   color: red;
-// }
 
 #home{
   position: relative;
@@ -53,5 +49,12 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-us-page {
+    right: -1000px;
+    width: 100vw;
   }
 }

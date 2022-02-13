@@ -26,7 +26,6 @@
 }
 .contact-us-page .content {
   margin-top: 50px;
-  margin-left: 20px;
 }
 
 .contact-us-page.active {
@@ -52,6 +51,13 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-us-page {
+    right: -1000px;
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=mycss.css.map */
