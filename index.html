@@ -12,7 +12,7 @@
     <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
     <!--vendors styles-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/mycss.css">
 </head>
 <div>
-
 <!--navigation-->
 <section class="smart-scroll">
     <div class="container-fluid">
@@ -62,7 +61,10 @@
 
 <div class="wrapper">
     <!--hero header-->
-    <section class="py-7 py-md-0 bg-hero" id="home" data-background-color="black">
+    <section class="py-7 py-md-0" id="home">
+        <video class="video-bg" autoplay muted>
+            <source src="./asset/Landing-Page-Video.mp4" type="video/mp4 ">
+        </video>
         <div class="container">
             <div class="row vh-md-100">
                 <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
@@ -71,9 +73,8 @@
                     
                     <div class="call-to-action">
                         <p>Wanna experience high quality dishsoap without affecting the environment?</p>
-                        <button class="btn btn-primary d-inline-flex flex-row align-items-center">
+                        <button onclick="toggleContactUs()" class="btn btn-primary d-inline-flex flex-row align-items-center">
                             Contact Us
-                            <em class="ml-2" data-feather="arrow-right"></em>
                         </button>
                     </div>
                 </div>
@@ -412,6 +413,15 @@
         </div>
     </footer>
 
+    <div class="contact-us-page">
+        <i class="close fa fa-thin fa-xmark fa-2xl" onclick="toggleContactUs()"></i>
+        <div class="container content">
+            <div class="row">
+                <h4>Get in touch.</h4>
+            </div>
+        <div/>
+    </div>
+
     <!--scroll to top-->
     <div class="scroll-top">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -446,6 +456,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://kit.fontawesome.com/1e88450c01.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/in-view.min.js"></script>
 <script src="js/scripts.js"></script>

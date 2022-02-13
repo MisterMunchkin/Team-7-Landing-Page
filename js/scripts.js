@@ -72,14 +72,14 @@ $(function () {
     });
 
     //To transition background color second section to white
-    var $target = $('.wrapper');
-    inView.threshold(0.3);
-    inView('section')
-    .on('enter', function (el) {
-        var color = $(el).attr('data-background-color');
-        $target.css('background-color', color);
-        $target.css('transition', 'background .2s ease');
-    });
+    // var $target = $('.wrapper');
+    // inView.threshold(0.3);
+    // inView('section')
+    // .on('enter', function (el) {
+    //     var color = $(el).attr('data-background-color');
+    //     $target.css('background-color', color);
+    //     $target.css('transition', 'background .2s ease');
+    // });
 
     //To make text transition to appear with ease
     var $heroTextTarget = $('#hero-text');
@@ -91,4 +91,16 @@ $(function () {
         $heroSubtextTarget.css('opacity', '100');
         $callToActionTarget.css('opacity', '100');
     })
+    .on('exit', function (el) {
+        console.log('exited home page');
+    });
+
+    var $contactUsPage = $('.contact-us-page');
+    window.toggleContactUs = function() {
+        if ($contactUsPage.hasClass('active')) {
+            $contactUsPage.removeClass('active');
+        } else {
+            $contactUsPage.addClass('active');
+        }
+    }
 });
